@@ -119,13 +119,10 @@ public:
 		cout << "Masukkan nilai exercise :" << endl;
 		cin >> Nilai2;
 		setExercise(Nilai2);
-		cout << "Masukkan nilai tugas akhir :" << endl;
-		cin >> Nilai3;
-		setTugasAkhir(Nilai3);
 	}
 
 	float hitungNilaiAkhir() {
-		return  (getActivity() + getExercise() + getTugasAkhir())/3;
+		return  (getActivity() + getExercise())/2; //memperbaiki hitung nilai akhir  dengan menghapus input tugas akhir 
 	}
 
 	void TampilkanKelulusan() {
